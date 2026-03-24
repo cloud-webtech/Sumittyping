@@ -138,29 +138,28 @@
 
 
     <!-- About Start -->
- <style>
+<style>
 /* Image Border Effect */
 .about-img-wrapper {
-    padding: 8px;
+    padding: 6px;
     border-radius: 20px;
-    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    background: linear-gradient(135deg, #007bff, #00c6ff);
     display: inline-block;
 }
 
 .about-img-wrapper img {
     border-radius: 15px;
     transition: 0.4s ease;
+    width: 100%;
 }
 
 .about-img-wrapper:hover img {
     transform: scale(1.05);
 }
 
-/* Glass Cards */
+/* Stat Cards */
 .stat-card {
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
+    border-radius: 12px;
     transition: 0.3s;
     color: #fff;
 }
@@ -169,11 +168,11 @@
     transform: translateY(-5px);
 }
 
-/* Different Colors */
-.bg1 { background: linear-gradient(135deg, #28a745, #218838); }
-.bg2 { background: linear-gradient(135deg, #007bff, #64a6eda5); }
-.bg3 { background: linear-gradient(135deg, #6c757d, #495057); }
-.bg4 { background: linear-gradient(135deg, #ffc107, #e0a800); }
+/* Card Colors */
+.bg1 { background: #28a745; }
+.bg2 { background: #007bff; }
+.bg3 { background: #6c757d; }
+.bg4 { background: #ffc107; color:#000; }
 
 /* Mobile spacing */
 @media(max-width:768px){
@@ -183,7 +182,7 @@
 }
 </style>
 
-<div class="container-fluid py-5" style="background:white;">
+<div class="container-fluid py-5 bg-white">
     <div class="container py-5">
         <div class="row align-items-center">
 
@@ -195,13 +194,13 @@
             </div>
 
             <!-- Content Section -->
-            <div class="col-lg-7 text-white">
-                <h6 class="text-info text-uppercase">About Us</h6>
+            <div class="col-lg-7">
+                <h6 class="text-primary text-uppercase">About Us</h6>
                 <h1 class="display-5 fw-bold mb-3">
                     First Choice For Computer Typing Education Courses
                 </h1>
 
-                <p class="mb-4" style="opacity:0.9;">
+                <p class="mb-4" style="color:#555;">
                     We offer structured courses in English and Marathi typing, 
                     basic computer operations, MS Office, and practical skill development. 
                     Our training includes step-by-step guidance, real-time practice, 
@@ -245,10 +244,8 @@
         </div>
     </div>
 </div>
-    <!-- About End -->
-
-
-    <!-- Feature Start -->
+<!-- About End -->
+<!-- Feature Start -->
     <div class="container-fluid bg-image" style="margin: 90px 0;">
         <div class="container">
             <div class="row">
