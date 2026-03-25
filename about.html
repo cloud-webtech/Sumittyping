@@ -269,59 +269,113 @@
     <!-- Header End -->
 
 
-    <!-- About Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 600px;">
-                    <div class="position-relative h-100">
-                       <img 
-                            src="img/b3.jpg" 
-                            style="
-                                width: 450px; 
-                                height: 400px; 
-                                object-fit: cover; 
-                                border: 5px solid black; 
-                                box-shadow: 0 0 40px skyblue;"
-                        >
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="section-title position-relative mb-4">
-                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">About Us</h6>
-                        <h1 class="display-4">First Choice For Computer Typing Education Courses</h1>
-                    </div>
-                    <p>We offer structured courses in English and Marathi typing, basic computer operations, MS Office, and practical skill development. Our training is designed for beginners as well as advanced learners, with step-by-step guidance, real-time practice sessions, and performance tracking</p>
-                    <div class="row pt-3 mx-0">
-                        <div class="col-3 px-0">
-                            <div class="bg-success text-center p-4">
-                                <h1 class="text-white" data-toggle="counter-up">6</h1>
-                                <h6 class="text-uppercase text-white">Available<span class="d-block">Subjects</span></h6>
-                            </div>
-                        </div>
-                        <div class="col-3 px-0">
-                            <div class="bg-primary text-center p-4">
-                                <h1 class="text-white" data-toggle="counter-up">8</h1>
-                                <h6 class="text-uppercase text-white">Online<span class="d-block">Courses</span></h6>
-                            </div>
-                        </div>
-                        <div class="col-3 px-0">
-                            <div class="bg-secondary text-center p-4">
-                                <h1 class="text-white" data-toggle="counter-up">15</h1>
-                                <h6 class="text-uppercase text-white">Skilled<span class="d-block">Computer</span></h6>
-                            </div>
-                        </div>
-                        <div class="col-3 px-0">
-                            <div class="bg-warning text-center p-4">
-                                <h1 class="text-white" data-toggle="counter-up">1890</h1>
-                                <h6 class="text-uppercase text-white">Happy<span class="d-block">Students</span></h6>
-                            </div>
-                        </div>
-                    </div>
+  <!-- About Start -->
+  <style>
+/* Image Border Effect */
+.about-img-wrapper {
+    padding: 6px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    display: inline-block;
+}
+
+.about-img-wrapper img {
+    border-radius: 15px;
+    transition: 0.4s ease;
+    width: 100%;
+}
+
+.about-img-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+/* Stat Cards */
+.stat-card {
+    border-radius: 12px;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Card Colors */
+.bg1 { background: #28a745; }
+.bg2 { background: #007bff; }
+.bg3 { background: #6c757d; }
+.bg4 { background: #ffc107; color:#000; }
+
+/* Mobile spacing */
+@media(max-width:768px){
+    .about-img-wrapper {
+        margin-bottom: 20px;
+    }
+}
+</style>
+
+<div class="container-fluid py-5 bg-white">
+    <div class="container py-5">
+        <div class="row align-items-center">
+
+            <!-- Image Section -->
+            <div class="col-lg-5 text-center mb-4 mb-lg-0">
+                <div class="about-img-wrapper">
+                    <img src="img/b5.jpg" class="img-fluid" style="max-height:400px; object-fit:cover;">
                 </div>
             </div>
+
+            <!-- Content Section -->
+            <div class="col-lg-7">
+                <h6 class="text-primary text-uppercase">About Us</h6>
+                <h1 class="display-5 fw-bold mb-3">
+                    First Choice For Computer Typing Education Courses
+                </h1>
+
+                <p class="mb-4" style="color:#555;">
+                    We offer structured courses in English and Marathi typing, 
+                    basic computer operations, MS Office, and practical skill development. 
+                    Our training includes step-by-step guidance, real-time practice, 
+                    and performance tracking.
+                </p>
+
+                <!-- Stats -->
+                <div class="row text-center">
+
+                    <div class="col-6 col-md-3 mb-3">
+                        <div class="stat-card bg1 p-3">
+                            <h2>6</h2>
+                            <small>Subjects</small>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3 mb-3">
+                        <div class="stat-card bg2 p-3">
+                            <h2>8</h2>
+                            <small>Courses</small>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3 mb-3">
+                        <div class="stat-card bg3 p-3">
+                            <h2>15</h2>
+                            <small>Skills</small>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3 mb-3">
+                        <div class="stat-card bg4 p-3">
+                            <h2>1890</h2>
+                            <small>Students</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </div>
+</div>
     <!-- About End -->
 
 
